@@ -34,7 +34,7 @@ app.get('/ping', async (req, res) => {
     const result = await pool.query("SELECT NOW()");
 
     res.send({
-        fecha: result.rows[0].now,
+        fecha: Math.random(),
     });
 
 });
